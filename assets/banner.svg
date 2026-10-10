@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img" aria-label="PaperTrail — a quiet shelf for the papers that shape your thinking">
+  <defs>
+    <radialGradient id="bg" cx="25%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#2d2a20"/>
+      <stop offset="100%" stop-color="#0f0d0a"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b4531a"/>
+      <stop offset="100%" stop-color="#9a4316"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="500" fill="url(#bg)"/>
+
+  <!-- subtle grid of citation dots in bg -->
+  <g fill="#f7f6f3" opacity="0.03">
+    <circle cx="140" cy="60" r="2"/>
+    <circle cx="320" cy="420" r="2"/>
+    <circle cx="520" cy="40" r="2"/>
+    <circle cx="760" cy="460" r="2"/>
+    <circle cx="60" cy="340" r="2"/>
+    <circle cx="1300" cy="30" r="2"/>
+    <circle cx="1550" cy="200" r="2"/>
+  </g>
+
+  <!-- Citation network on the right -->
+  <g transform="translate(880 40)">
+    <!-- glow -->
+    <g filter="url(#soft)" opacity="0.35">
+      <circle cx="260" cy="110" r="24" fill="#b4531a"/>
+      <circle cx="470" cy="200" r="20" fill="#b4531a"/>
+      <circle cx="620" cy="140" r="16" fill="#b4531a"/>
+    </g>
+
+    <!-- edges -->
+    <g stroke="#b4531a" stroke-width="1" opacity="0.55" fill="none">
+      <line x1="110" y1="80" x2="260" y2="110"/>
+      <line x1="110" y1="80" x2="210" y2="220"/>
+      <line x1="260" y1="110" x2="420" y2="80"/>
+      <line x1="260" y1="110" x2="400" y2="200"/>
+      <line x1="210" y1="220" x2="360" y2="300"/>
+      <line x1="420" y1="80" x2="560" y2="60"/>
+      <line x1="400" y1="200" x2="470" y2="200"/>
+      <line x1="470" y1="200" x2="620" y2="140"/>
+      <line x1="470" y1="200" x2="520" y2="330"/>
+      <line x1="360" y1="300" x2="520" y2="330"/>
+      <line x1="620" y1="140" x2="700" y2="260"/>
+      <line x1="560" y1="60" x2="700" y2="100"/>
+    </g>
+
+    <!-- nodes: library (small, cream) + external (orange) -->
+    <g>
+      <circle cx="110" cy="80" r="5" fill="#f7f6f3"/>
+      <circle cx="210" cy="220" r="5" fill="#f7f6f3"/>
+      <circle cx="420" cy="80" r="5" fill="#f7f6f3"/>
+      <circle cx="400" cy="200" r="5" fill="#f7f6f3"/>
+      <circle cx="360" cy="300" r="5" fill="#f7f6f3"/>
+      <circle cx="520" cy="330" r="5" fill="#f7f6f3"/>
+      <circle cx="700" cy="260" r="5" fill="#f7f6f3"/>
+      <circle cx="700" cy="100" r="5" fill="#f7f6f3"/>
+
+      <!-- highlighted "recommended" nodes -->
+      <circle cx="260" cy="110" r="10" fill="url(#accent)"/>
+      <circle cx="470" cy="200" r="8" fill="url(#accent)"/>
+      <circle cx="620" cy="140" r="7" fill="url(#accent)"/>
+      <circle cx="560" cy="60" r="5" fill="url(#accent)"/>
+    </g>
+  </g>
+
+  <!-- Left-side type -->
+  <g font-family="'Source Serif 4', Georgia, serif" fill="#f7f6f3">
+    <text x="80" y="200" font-size="96" font-weight="600" letter-spacing="-1">PaperTrail</text>
+  </g>
+
+  <rect x="80" y="228" width="56" height="2" fill="#b4531a"/>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <text x="80" y="275" font-size="22" fill="#d8d5c6">
+      A quiet shelf for the papers that shape your thinking.
+    </text>
+    <text x="80" y="330" font-size="14" fill="#8a846c" letter-spacing="1.5">
+      MERN · OPENALEX · CITATION-OVERLAP RECOMMENDER
+    </text>
+  </g>
+
+  <!-- footer badges -->
+  <g transform="translate(80 400)" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#b7b19b">
+    <g>
+      <rect width="90" height="26" rx="13" fill="none" stroke="#403c2f" stroke-width="1"/>
+      <text x="45" y="17" text-anchor="middle">React 18</text>
+    </g>
+    <g transform="translate(100 0)">
+      <rect width="86" height="26" rx="13" fill="none" stroke="#403c2f" stroke-width="1"/>
+      <text x="43" y="17" text-anchor="middle">Express</text>
+    </g>
+    <g transform="translate(196 0)">
+      <rect width="98" height="26" rx="13" fill="none" stroke="#403c2f" stroke-width="1"/>
+      <text x="49" y="17" text-anchor="middle">MongoDB</text>
+    </g>
+    <g transform="translate(304 0)">
+      <rect width="92" height="26" rx="13" fill="none" stroke="#403c2f" stroke-width="1"/>
+      <text x="46" y="17" text-anchor="middle">Node 18+</text>
+    </g>
+    <g transform="translate(406 0)">
+      <rect width="110" height="26" rx="13" fill="none" stroke="#403c2f" stroke-width="1"/>
+      <text x="55" y="17" text-anchor="middle">Tailwind 3</text>
+    </g>
+  </g>
+</svg>
