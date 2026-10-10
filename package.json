@@ -1,0 +1,12 @@
+{
+  "name": "papertrail",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PaperTrail — a research reading companion built with the MERN stack.",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build"
+  }
+}
