@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  @apply bg-ink-50 text-ink-800 antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+h1, h2, h3, h4 {
+  @apply font-serif;
+}
+
+a {
+  @apply text-accent-600 hover:text-accent-500 transition-colors;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 font-medium text-sm transition-colors;
+}
+.btn-primary {
+  @apply btn bg-ink-800 text-ink-50 hover:bg-ink-700 disabled:bg-ink-400 disabled:cursor-not-allowed;
+}
+.btn-secondary {
+  @apply btn bg-ink-100 text-ink-800 hover:bg-ink-200 border border-ink-200;
+}
+.btn-ghost {
+  @apply btn text-ink-700 hover:bg-ink-100;
+}
+.btn-danger {
+  @apply btn bg-red-50 text-red-700 hover:bg-red-100 border border-red-200;
+}
+
+.input {
+  @apply w-full rounded-md border border-ink-200 bg-white px-3 py-2 text-sm text-ink-800
+         placeholder:text-ink-400 focus:outline-none focus:ring-2 focus:ring-accent-500/40 focus:border-accent-500 transition;
+}
+
+.card {
+  @apply bg-white rounded-lg border border-ink-100 shadow-card;
+}
+
+.chip {
+  @apply inline-flex items-center gap-1 rounded-full border border-ink-200 bg-ink-50 px-2.5 py-0.5 text-xs text-ink-600;
+}
+
+.badge {
+  @apply inline-flex items-center rounded px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide;
+}
+
+.badge-want { @apply badge bg-ink-100 text-ink-600; }
+.badge-reading { @apply badge bg-amber-100 text-amber-800; }
+.badge-read { @apply badge bg-emerald-100 text-emerald-800; }
+
+/* subtle paper texture */
+.paper-bg {
+  background:
+    radial-gradient(1200px 400px at 20% -10%, rgba(180, 83, 26, 0.05), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, rgba(45, 42, 32, 0.04), transparent 50%);
+}
